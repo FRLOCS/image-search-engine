@@ -11,8 +11,29 @@ img {
     flex-wrap: wrap;
 }
 
-.search {
-    
-    
-
+.search{
+    border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);  
 }
+
+#border{
+    text-align: center;
+    margin: 200px;
+    animation-name: colorswitch;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorswitch{
+    0% {color: #4285F4;}
+    25% {color: #DB4437;}
+    50% {color:#F4B400;}
+    75% {color:burlywood;}
+    100% {color: #0F9D58;}
+}
+
+
+
