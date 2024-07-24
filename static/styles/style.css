@@ -27,6 +27,15 @@ img {
     animation-iteration-count: infinite;
 }
 
+#resultFound{
+    text-align: center;
+    margin: 100px;
+    animation-name: colorswitch;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
 @keyframes colorswitch{
     0% {color: #4285F4;}
     25% {color: #DB4437;}
