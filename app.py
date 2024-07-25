@@ -9,7 +9,6 @@ app = Flask(__name__)
 
     #return render_template('gifs.html', random=randomGif, myGifs=myGifs)
 
-
 @app.route('/input', methods=["GET", "POST"])
 def input():
     imgData = {
@@ -20,14 +19,12 @@ def input():
         "celebrities": {"https://people.com/thmb/y-A6cZ_B8rdGQwTDDVG4aHzNXos=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(689x399:691x401)/lebron-james-7f070c722a1143e295b46f67ff0005dc.jpg","https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/1272/cached.offlinehbpl.hbpl.co.uk/news/ORP/Kanye_4.jpg","https://www.usmagazine.com/wp-content/uploads/2023/03/Billie-Eilish-more-celebrities-who-took-social-media-breaks-social.jpg?w=1000&quality=86&strip=all", "https://www.byrdie.com/thmb/MIe01J86hMfPU4JL7UQIrAyMokc=/1500x0/filters:no_upscale():max_bytes(200000):strip_icc()/Celebrities-NEWS-Mobile-24276ccc3c8643adb45380e088435a37.jpg", "https://manofmany.com/wp-content/uploads/2019/12/2019s-Most-Influential-Male-Celebrities-Under-30-According-To-Forbes-6.jpg", "https://media.voguebusiness.com/photos/650dbecd12de6c737bc18493/3:2/w_1998,h_1332,c_limit/CELEBRITY-MARKETING-vogue-business-story.jpg"}
         }
     
-    
     if request.method == 'POST':
         query = request.form['query']
         if query not in imgData:
             return "Nothing found for " + query
         return render_template('result.html', imgData=imgData[query], count=len(imgData[query]))
     return render_template('input.html', url=url_for('input'))
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
