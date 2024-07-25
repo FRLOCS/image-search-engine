@@ -2,10 +2,12 @@
 img {
     width: 300px;
     height: 300px;
+
 }
 
 .resultImg {
     display: flex;
+    gap: 30px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -27,12 +29,14 @@ img {
     animation-iteration-count: infinite;
 }
 
-#resultFound{
-    text-align: center;
-    margin: 100px;
+#border2{
     animation-name: colorswitch;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+}
+
+#resultFound{
+    
 }
 
 
