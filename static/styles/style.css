@@ -2,6 +2,11 @@
 img {
     height: 200px;
     border-radius: 20px;
+    transition: height 3s;
+}
+
+img:hover{
+    height: 250px
 }
 
 .resultImg {
@@ -35,19 +40,9 @@ img {
 }
 
 
-
-
 .btn btn-primary{
     margin: 0;
 }
-
-.fav-button{
-    position: absolute;
-    top: 30px;
-    left: 95%;
-    transform: scale(5);
-}
-
 
 
 @keyframes colorswitch{

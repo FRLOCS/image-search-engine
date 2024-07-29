@@ -34,5 +34,10 @@ def input():
         return render_template('result.html', imgData=imgData[query], count=len(imgData[query]))
     return render_template('input.html', url=url_for('input'), recently_search=recently_search)
 
+
+@app.route('/about')
+def about():
+    return render_template('aboutme.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
