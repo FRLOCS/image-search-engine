@@ -35,7 +35,7 @@ def input():
     return render_template('input.html', url=url_for('input'), recently_search=recently_search)
 
 
-@app.route('/about')
+@app.route('/aboutme')
 def about():
     return render_template('aboutme.html')
 

@@ -27,7 +27,7 @@ img:hover{
 
 #border{
     text-align: center;
-    margin: 120px;
+    margin: 150px;
     animation-name: colorswitch;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -42,6 +42,20 @@ img:hover{
 
 .btn btn-primary{
     margin: 0;
+}
+
+.about-page{
+    border-style: groove;
+    border-color: antiquewhite;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+}
+
+body{
+    color: azure;
 }
 
 
