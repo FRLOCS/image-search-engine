@@ -34,25 +34,20 @@ img {
     animation-iteration-count: infinite;
 }
 
-.recent{
-    display: flex;
-    gap: 30px;
-    position: absolute;
-    top: 610px;
-    left: 400px;
-}
 
-#recenth1{
-    display: flex;
-    gap: 30px;
-    position: absolute;
-    top: 600px;
-    left: 10px;
-}
+
 
 .btn btn-primary{
     margin: 0;
 }
+
+.fav-button{
+    position: absolute;
+    top: 30px;
+    left: 95%;
+    transform: scale(5);
+}
+
 
 
 @keyframes colorswitch{
